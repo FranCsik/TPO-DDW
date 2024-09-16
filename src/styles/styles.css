@@ -34,7 +34,7 @@ div.item1{
 
 section.homePage img{
     max-width: 100%;
-    
+    height: auto;
 }
 
 @media(min-width: 920px){
@@ -57,5 +57,8 @@ section.homePage img{
     }
     div.item2{
         width: 50%;
+    }
+    section.homePage img{
+        max-height: 500px;
     }
 }

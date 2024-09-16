@@ -114,16 +114,15 @@
     }
 
 
+    footer p{font-size: 12px; color: #FFFFFF;}
     footer{
       margin-top: auto;
       background-color: #000000;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      height: 62px;
+      min-height: 62px;
     }
-    footer p{font-size: 12px; color: #FFFFFF;}
-
     footer img{
       width: 32px;
     }

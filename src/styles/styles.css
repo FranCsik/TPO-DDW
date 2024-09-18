@@ -62,3 +62,141 @@ section.homePage img{
         max-height: 500px;
     }
 }
+
+/* Página 'Nosotros' */
+section.nosotrosPage {
+    background-color: #FAF7F2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1A74E2; /* Unificar color de ambos términos */
+    margin-bottom: 40px;
+}
+
+h2 span {
+    color: #1A74E2; /* Color unificado para "Sobre" y "nosotros" */
+}
+
+div.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+div.team-member {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+div.left-section {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.right-section {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+div.profile-img img,
+div.profile-placeholder {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div.profile-placeholder {
+    background-color: #1A74E2;
+}
+
+div.member-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.member-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+div.member-info p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+div.uade-logo {
+    width: 80px;
+    margin-top: 5px;
+}
+
+div.member-desc{
+    display: grid;
+}
+
+div.member-desc p {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+div.portfolio-cont{
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+div.member-desc .portfolio-btn {
+    background-color: #0074D9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+div.member-desc .portfolio-btn.disabled {
+    background-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    div.team-container {
+        grid-template-columns: 1fr;
+    }
+
+    div.team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.left-section,
+    div.right-section {
+        width: 100%;
+    }
+
+    div.member-info,
+    div.member-desc {
+        text-align: center;
+    }
+}
+

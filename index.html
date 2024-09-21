@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/services.css"> 
+    <link rel="stylesheet" href="src/styles/testimonials.css">
     <link rel="stylesheet" href="src/styles/header_footer.css">
+    <link rel="stylesheet" href="src/styles/faq.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title> 3N Consulting </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./src/icons/logo-icon.jpeg" />
 </head>
 <body>
     <header>
         <nav>
-            <p>LOGO</p>
+            <p> 3N Consulting </p>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
               <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
@@ -30,7 +36,7 @@
                 <li class="mobile-categories"><a href="servicios.html">Servicios</a></li>
                 <li class="mobile-categories"><a href="portafolio.html">Portafolio</a></li>
                 <li class="mobile-categories"><a href="soporte.html">Soporte</a></li>
-                <li class="mobile-categories"><a href="contacto.html">Contacto</a></li>
+                <li class="mobile-categories"> <a href="contacto.html"> Contacto</a> </li>
               </ul>
             </div>
         </nav>
@@ -38,12 +44,139 @@
     <section class="homePage">
       <div class="pageContent">
         <div class="item-1">
-          <h1>Desarrollar software nunca fue tan fácil, estamos enfocados en lograr tus objetivos</h1>
-          <p>Contanos tu idea y te proporcionamos una solución</p>
+          <h1>Desarrollar <span>software</span> nunca fue tan fácil</h1>
+          <p> Estamos enfocados en lograr tus objetivos. Contanos tu idea y te proporcionamos una solución</p>
         </div>
         <img class="item-2" src="src/img/team.png" height="500" alt="">
       </div>
     </section>
+    <section class="servicesContent">
+      <div class="headerServices">
+        <h2> Nuestros <span> servicios </span> </h2>
+        <p class="subtitle_services"> Nos especializamos en brindar una gama completa de servicios adaptados para satisfacer las necesidades de su empresa y fomentar su crecimiento. Nuestro equipo está comprometido en lograr soluciones innovadoras que mejoran la eficiencia e impulsen la transformación digital.
+      </p>
+      </div>
+      <div class="servicesContainer">
+        <div class="servicesRow">
+          <div class="cardServices">
+            <h3 class="titlecard_svc"> Testing </h3>
+            <p class="txtcard_svc"> Nuestro enfoque integral abarca desde pruebas funcionales y de regresión hasta pruebas de carga y seguridad, asegurando que cada producto cumpla con los más altos estándares. Utilizamos herramientas y metodologías avanzadas para identificar y resolver posibles problemas antes de la implementación, lo que te permite lanzar al mercado soluciones fiables y sin fallos. </p>
+          </div>
+          <div class="cardServices">
+            <h3 class="titlecard_svc"> Ingeniería de Software </h3>
+            <p class="txtcard_svc"> En nuestra empresa, nos especializamos en crear soluciones de software personalizadas adaptadas a tus requisitos específicos. Nuestra experiencia abarca diversas industrias, incluyendo finanzas, salud, comercio minorista, manufactura y logística. Nos destacamos en el desarrollo de software basado en requisitos funcionales detallados, en la construcción de integraciones y en la escalabilidad de productos de cientos a miles de usuarios. </p>
+          </div>
+        </div>
+        <div class="servicesContainer">
+          <div class="servicesRow">
+            <div class="cardServices">
+              <h3 class="titlecard_svc"> Talent Support </h3>
+              <p class="txtcard_svc"> Nos especializamos en proporcionar recursos y capacitación personalizados que se adaptan a las necesidades específicas de tu organización. Desde la incorporación de talento hasta programas de formación continua, nuestro enfoque se centra en fomentar habilidades técnicas y blandas, garantizando que tu equipo esté siempre actualizado con las últimas tendencias y tecnologías. </p>
+            </div>
+            <div class="cardServices">
+              <h3 class="titlecard_svc"> Soluciones personalizadas </h3>
+              <p class="txtcard_svc"> 
+                Nuestro equipo de expertos colabora estrechamente con vos para comprender tus objetivos y desafíos, permitiéndonos desarrollar aplicaciones y sistemas que optimizan procesos y mejoran la eficiencia. Desde la conceptualización hasta la implementación, garantizamos que cada solución esté alineada con tu visión, brindando flexibilidad y escalabilidad para adaptarse a futuros cambios en el mercado. </p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <button class="btnServices"> Conoce más </button>
+    </section>
+    <section class="testimonialsContent">
+      <h2 class="title_Testimonials"> Testimonios </h2>
+      <div class="testimonialsContainer">
+        <article class="testimonial-card">
+          <img class="testimonial_img" src="./src/img/testimonial_img.jpeg" alt="">
+          <p class="testimonial_quote"> "Trabajar con N3 Consulting ha sido una experiencia increíble. Crearon una solución de software personalizada que optimizó nuestros procesos y mejoró la satisfacción de nuestros clientes.”</p>
+          <h4 class="testimonial_name">Macarena Gimenez</h4>
+          <p class="testimonial_role"> HR Generalist @ Empresa </p>
+        </article>
+        <article class="testimonial-card">
+          <img class="testimonial_img" src="./src/img/testimonial_img2.jpeg" alt="">
+          <p class="testimonial_quote"> "Colaborar con N3 Consulting fue una gran decisión. Su equipo comprendió nuestras necesidades y desarrolló una solución eficiente que transformó nuestros procesos. El soporte siempre ha sido rápido y eficaz.</p>
+          <h3 class="testimonial_name">Ingrid Maraz</h3>
+          <p class="testimonial_role"> IT Manager @ Empresa </p>
+        </article>
+        <article class="testimonial-card">
+          <img class="testimonial_img" src="./src/img/testimonial_img3.jpeg" alt="">
+          <p class="testimonial_quote"> "Gracias a N3 Consulting, nuestra productividad ha aumentado considerablemente. La solución de software que implementaron es intuitiva y se adapta perfectamente a nuestro flujo de trabajo." </p>
+          <h3 class="testimonial_name">Leonel Contreras</h3>
+          <p class="testimonial_role"> Product Owner @ Empresa </p>
+        </article>
+        <article class="testimonial-card">
+          <img class="testimonial_img" src="./src/img/testimonials_img4.jpeg" alt="">
+          <p class="testimonial_quote"> "Elegir a N3 Consulting fue un acierto total. Su enfoque personalizado nos permitió obtener una herramienta que realmente mejora nuestra operación diaria. Además, su equipo siempre está dispuesto a ayudar." </p>
+          <h3 class="testimonial_name">Lucas Chero</h3>
+          <p class="testimonial_role">Project Manager @ Empresa </p>
+        </article>
+      </div>
+    </section>
+    <section class="questionsContainer">
+      <h2 class="title-questions">Preguntas <span> frecuentes </span></h2>
+      <div class="accordion-container">
+          <div class="accordion">
+              <div class="accordion-header">
+                  <h3 class="faq-title">¿Qué es N3 Consulting?</h3>
+                  <button class="accordion-btn">
+                      <img src="./src/icons/arrow-icon.svg" alt="flecha">
+                  </button>
+              </div>
+              <hr>
+              <div class="accordion-info">
+                  Respuesta 1
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion-header">
+                  <h3 class="faq-title">¿Qué servicios ofrecemos?</h3>
+                  <button class="accordion-btn">
+                      <img src="./src/icons/arrow-icon.svg" alt="flecha">
+                  </button>
+              </div>
+              <hr>
+              <div class="accordion-info">
+              Respuesta 2
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion-header">
+                  <h3 class="faq-title">¿Cuál es el precio por nuestros servicios?</h3>
+                  <button class="accordion-btn">
+                      <img src="./src/icons/arrow-icon.svg" alt="flecha">
+                  </button>
+              </div>
+              <hr>
+              <div class="accordion-info">
+                   Respuesta 2
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion-header">
+                  <h3 class="faq-title">¿Cómo me contacto con Soporte?</h3>
+                  <button class="accordion-btn">
+                      <img src="./src/icons/arrow-icon.svg" alt="flecha">
+                  </button>
+              </div>
+              <hr>
+              <div class="accordion-info">
+                  Respuesta 4
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion-header">
+                  <h3 class="faq-title">¿Dónde puedo ver su portfolio?</h3>
+                  <button class="accordion-btn">
+                      <img src="./src/icons/arrow-icon.svg" alt="flecha">
+                  </button>
+              </div>
+              <hr>
+              <div class="accordion-info">
+                  Respuesta 5
+              </div>
+          </div>
+      </div>
+  </section>
     <footer>
       <p>Grupo 3</p>
       <p>Todos los derechos reservados</p>

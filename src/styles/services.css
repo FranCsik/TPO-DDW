@@ -1,0 +1,81 @@
+section.servicesContent {
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.headerServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+section.servicesContent h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 49px;
+    font-weight: bold;
+    line-height: 105%;  
+    text-align: center; 
+    span {
+        color: #00509C;
+    }
+}
+
+section.servicesContent .subtitle_services {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    opacity: 55%;
+    width: 1024px;
+    text-align: center;
+}
+
+.servicesRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cardServices {
+    width: 552px;
+    height: 284px;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.titlecard_svc {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 105%;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.txtcard_svc {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    opacity: 55%;
+    line-height: 120%;
+    letter-spacing: -2%;
+
+}
+
+.btnServices {
+    width: 127px;
+    height: 50px;
+    margin-left: 44rem;
+    background-color: #03A69F;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}

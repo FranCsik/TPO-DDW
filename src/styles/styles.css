@@ -20,12 +20,21 @@ section.homePage{
 
 }
 section.homePage h1{
+    font-family: "Poppins", sans-serif;
     font-size: 48px;
+    span {
+        color: #00509c; 
+    }
 }
 
 section.homePage p{
     margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
     font-size: 16px;
+    font-weight: medium;
+    line-height: 120%;;
+    letter-spacing: -2%;
 }
 
 div.item1{

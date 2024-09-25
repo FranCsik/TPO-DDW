@@ -60,6 +60,12 @@
     margin-bottom: 10px;
 }
 
+.portafolio-item a {
+    text-decoration: none;
+    color: #1A74E2;
+    font-weight: bold;
+}
+
 /* Tecnologías */
 .tecnologias-title {
     font-size: 24px;

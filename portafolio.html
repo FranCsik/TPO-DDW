@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header_footer.css">
+    <link rel="stylesheet" href="src/styles/portafolio.css"> <!-- Nuevo CSS para la sección del portafolio -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Portafolio</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./src/icons/logo-icon.jpeg" />
-</head>
 </head>
 <body>
     <header>
@@ -38,14 +38,46 @@
             </div>
         </nav>
     </header>
+
+    <section class="portafolio">
+        <h2>Portafolio</h2>
+        <div class="portafolio-container">
+            <div class="main-portafolio">
+                <p class="portafolio-description">
+                  En nuestro portafolio de desarrollo, hemos trabajado con diversas empresas del sector tecnológico para implementar soluciones innovadoras y escalables.
+                </p>
+            </div>
+            <div class="portafolio-items">
+                <div class="portafolio-item">
+                    <img src="src/img/screenInicio.png" alt="Imagen del Sitio">
+                    <p>Empresa: 3N Consulting y enlace del sitio de la empresa de desarrollo de Software (descripción breve), Link al prototipo.</p>
+                    <a href="https://www.figma.com/design/LeFLDvvfOrdJ0cQ9Y7wkL2/TP-Grupal---UVA-2?node-id=0-1" target="_blank">Ver Prototipo</a>
+                </div>
+                <div class="portafolio-item">
+                    <img src="src/img/warning.png" alt="En construcción">
+                    <p>Empresa: Senda-Tech. En construcción.</p>
+                </div>
+            </div>
+
+            <!-- Sección de Tecnologías -->
+            <h3 class="tecnologias-title">Tecnologías</h3>
+            <div class="tecnologias">
+                <img src="src/img/bootstrap-logo.png" alt="Bootstrap">
+                <img src="src/img/html-logo.png" alt="HTML">
+                <img src="src/img/css-logo.png" alt="CSS">
+                <img src="src/img/js-logo.png" alt="JavaScript">
+            </div>
+        </div>
+    </section>
+
     <footer>
       <p>Grupo 3</p>
       <p>Todos los derechos reservados</p>
       <div class="social-media">
-        <img src="src/img/instagram-logo.png" alt="">
-        <img src="src/img/facebook-logo.png" alt="">
-        <img src="src/img/linkedin-logo.png" alt="">
+        <img src="src/img/instagram-logo.png" alt="Instagram">
+        <img src="src/img/facebook-logo.png" alt="Facebook">
+        <img src="src/img/linkedin-logo.png" alt="LinkedIn">
       </div>
-  </footer>
+    </footer>
 </body>
 </html>

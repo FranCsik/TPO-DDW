@@ -93,18 +93,15 @@ h2 span {
 
 div.team-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
     max-width: 1100px;
     margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 div.team-member {
     background-color: white;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
 }
 
 div.left-section {
@@ -164,9 +161,11 @@ div.member-desc p {
     font-size: 12px;
     color: #555;
     margin-bottom: 10px;
+    min-height: 300px;
 }
 
 div.portfolio-cont{
+    margin: auto;
     margin-top: 15px;
     display: flex;
     justify-content: end;
@@ -187,8 +186,12 @@ div.member-desc .portfolio-btn.disabled {
     cursor: not-allowed;
 }
 
+div.member-desc .portfolio-btn.figma {
+    background-color: #FF2D16;
+}
+
 /* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     div.team-container {
         grid-template-columns: 1fr;
     }
@@ -201,11 +204,15 @@ div.member-desc .portfolio-btn.disabled {
     div.left-section,
     div.right-section {
         width: 100%;
+        padding-left: 0px;
     }
 
     div.member-info,
     div.member-desc {
         text-align: center;
+    }
+    div.member-desc p{
+            min-height: 1px;
     }
 }
 

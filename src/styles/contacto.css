@@ -1,11 +1,39 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Header styles */
 header {
     width: 100%;
-    background-color: #FFF; /* Ejemplo de color de fondo */
+    background-color: #FFF;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative; /* Asegúrate de que no esté afectado por flexbox del body */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
     z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Alinear los elementos al centro */
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f4b400;
 }
 
 /* Footer styles */
@@ -14,27 +42,35 @@ footer {
     background-color: #FFF;
     padding: 20px 10px;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
+    position: relative; /* Quitar bottom: 0, porque afecta al layout */
+    z-index: 100;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset flexbox settings for header and footer */
-header, footer {
-    display: block;
+footer p {
+    color: #333;
 }
 
+/* Flex settings for body */
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
 }
 
+main {
+    flex-grow: 1; /* Permite que el contenido principal se expanda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Contacto */
 .contact-container, .office-info {
     background: white;
     padding: 20px;
@@ -47,12 +83,12 @@ body {
 
 h1, h2 {
     color: #00509C;
-    font-size: 34px; /* H2 */
+    font-size: 34px;
     font-weight: 700;
 }
 
 h1 {
-    font-size: 49px; /* H1 for office */
+    font-size: 49px;
 }
 
 .subtitle {
@@ -99,7 +135,6 @@ textarea {
     justify-content: center;
     align-items: center;
     height: 44px;
-    width: calc(100% - 160px); /* Adjust based on padding */
     cursor: pointer;
 }
 
@@ -120,4 +155,9 @@ textarea {
         width: 100%;
         height: 200px;
     }
+}
+
+/* Reset flexbox settings for header and footer */
+header, footer {
+    flex-shrink: 0; /* Asegura que no se reduzcan en flexbox */
 }

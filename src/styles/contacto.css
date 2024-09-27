@@ -1,0 +1,34 @@
+/* Estilo para la sección de contacto */
+.contacto-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.contacto-container h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.info-adicional {
+    margin-top: 20px;
+}

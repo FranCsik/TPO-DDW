@@ -38,45 +38,29 @@
     </nav>
 </header>
 
-<section class="contact-section">
-  <div class="contact-form-container">
-      <h1>Contacto</h1>
-      <form action="#" method="POST">
-          <div class="form-group">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Julian Alvarez">
+<body>
+  <div class="contact-container">
+      <h2>Contacto</h2>
+      <p class="subtitle">¿Tienes una idea? Háblalo con nosotros</p>
+      <form class="contact-form">
+          <input type="text" placeholder="Julian Alvarez" id="name" name="name">
+          <input type="email" placeholder="julianalvarez@gmail.com" id="email" name="email">
+          <input type="tel" placeholder="(554) 1233 4565" id="phone" name="phone">
+          <textarea placeholder="Escribe tu mensaje" id="message" name="message"></textarea>
+          <div class="checkbox">
+              <input type="checkbox" id="terms" name="terms">
+              <label for="terms">Acepto los Términos y condiciones de Grupo 03 y estoy de acuerdo con su Política de Privacidad.</label>
           </div>
-          <div class="form-group">
-              <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" name="apellido" placeholder="Álvarez">
-          </div>
-          <div class="form-group">
-              <label for="telefono">Teléfono:</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="123456789">
-          </div>
-          <div class="form-group">
-              <label for="consulta">Consulta:</label>
-              <textarea id="consulta" name="consulta" placeholder="Escribe tu consulta aquí..."></textarea>
-          </div>
-          <div class="form-group checkbox">
-              <input type="checkbox" id="terminos" name="terminos">
-              <label for="terminos">Acepto los términos y condiciones</label>
-          </div>
-          <button type="submit" class="btn-enviar">Enviar</button>
+          <button type="submit">ENVIAR MENSAJE</button>
       </form>
+      <div class="office-info">
+          <h3>Nuestra oficina</h3>
+          <p>N3 Consulting</p>
+          <p>Dirección: Lima 757, Ciudad Autónoma de Buenos Aires</p>
+          <p>Horarios de atención: Lunes a Viernes, 9 a 18 horas.</p>
+      </div>
   </div>
-  <div class="additional-info">
-      <p><strong>Horarios de Atención:</strong> Lunes a Viernes de 9:00 a 18:00</p>
-      <p><strong>Dirección:</strong> UADE - Lima 775, CABA</p>
-      <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3264565080765!2d-58.39892998436718!3d-34.61765266596471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1bc5d6b7b%3A0xe2c9f7f70e5d14fd!2sUADE!5e0!3m2!1ses!2sar!4v1636907006393!5m2!1ses!2sar" 
-          width="400" 
-          height="300" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy"></iframe>
-  </div>
-</section>
+</body>
 
 
     

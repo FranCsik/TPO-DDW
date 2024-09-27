@@ -1,92 +1,73 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.contact-form-container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+.contact-container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
     text-align: center;
 }
 
-h1 {
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    font-weight: bold;
+h2 {
+    color: black;
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.subtitle {
     font-size: 14px;
+    color: grey;
+    margin-bottom: 20px;
 }
 
-textarea {
-    height: 100px;
-    resize: none;
-}
-
-.checkbox {
+.contact-form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
-.checkbox input {
-    margin-right: 10px;
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
-.btn-enviar {
+button {
     background-color: #00bfff;
     color: white;
-    padding: 10px 20px;
     border: none;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    font-size: 16px;
 }
 
-.btn-enviar:hover {
+button:hover {
     background-color: #0099cc;
 }
 
-.additional-info {
-    margin-top: 40px;
+.checkbox {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.office-info {
+    margin-top: 20px;
     text-align: center;
 }
 
-iframe {
-    margin-top: 20px;
-    border-radius: 10px;
+.office-info h3 {
+    color: black;
+    margin-bottom: 5px;
 }

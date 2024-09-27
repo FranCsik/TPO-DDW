@@ -41,27 +41,38 @@
 <!-- Contacto -->
 <div class="contacto-container">
   <h2>Contacto</h2>
-  <form action="URL_A_DONDE_ENVIAR_EL_FORMULARIO" method="POST">
-      <label for="nombre">Nombre y apellido:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="telefono">Teléfono:</label>
-      <input type="text" id="telefono" name="telefono">
-      
-      <label for="consulta">Consulta:</label>
-      <textarea id="consulta" name="consulta" required></textarea>
-      
-      <button type="submit">Enviar</button>
-  </form>
+  <div class="form-container">
+      <form action="URL_A_DONDE_ENVIAR_EL_FORMULARIO" method="POST">
+          <div class="input-group">
+              <label for="nombre">Nombre y apellido:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          </div>
+          
+          <div class="input-group">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="input-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="text" id="telefono" name="telefono">
+          </div>
+          
+          <div class="input-group">
+              <label for="consulta">Consulta:</label>
+              <textarea id="consulta" name="consulta" required></textarea>
+          </div>
+          
+          <button type="submit">Enviar</button>
+      </form>
+  </div>
   <div class="info-adicional">
-      <p>Dirección: Dirección de la oficina</p>
-      <p>Email: info@tuempresa.com</p>
-      <p>Teléfono: +54 11 1234 5678</p>
+      <p><strong>Dirección:</strong> Dirección de la oficina</p>
+      <p><strong>Email:</strong> info@tuempresa.com</p>
+      <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
   </div>
 </div>
+
 
     
     <footer>

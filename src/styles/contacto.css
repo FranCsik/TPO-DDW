@@ -1,3 +1,29 @@
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #FFF; /* Ejemplo de color de fondo */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative; /* Asegúrate de que no esté afectado por flexbox del body */
+    z-index: 1000;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #FFF;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Reset flexbox settings for header and footer */
+header, footer {
+    display: block;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;

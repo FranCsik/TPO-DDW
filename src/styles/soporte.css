@@ -1,4 +1,8 @@
-
+.soporte_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .soporte_title {
     color: #00509C;
@@ -18,9 +22,39 @@
     height: 436px;
     padding: 24px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
     flex-shrink: 0;
+    margin: 24px 0;
+}
+
+.options_content {
+    display: flex;
+    gap: 5.5rem;
+}
+
+.img_bigcard {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 200px;
+}
+
+.name_soporte {
+    color: #000;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 105%; 
+}
+
+.option_container {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
 }
 
 .soporte_desc {
@@ -41,6 +75,7 @@
     flex-shrink: 0;
     border-radius: 16px;
     background: #FFFFFF;
+    margin: 20px 0;
 }
 
 .img_soporte{

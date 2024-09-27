@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header_footer.css">
+    <link rel="stylesheet" href="src/styles/portafolio.css"> <!-- Nuevo CSS para la sección contacto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -36,6 +37,32 @@
         </div>
     </nav>
 </header>
+
+<!-- Contacto -->
+<div class="contacto-container">
+  <h2>Contacto</h2>
+  <form action="URL_A_DONDE_ENVIAR_EL_FORMULARIO" method="POST">
+      <label for="nombre">Nombre y apellido:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono">
+      
+      <label for="consulta">Consulta:</label>
+      <textarea id="consulta" name="consulta" required></textarea>
+      
+      <button type="submit">Enviar</button>
+  </form>
+  <div class="info-adicional">
+      <p>Dirección: Dirección de la oficina</p>
+      <p>Email: info@tuempresa.com</p>
+      <p>Teléfono: +54 11 1234 5678</p>
+  </div>
+</div>
+
     
     <footer>
       <div class="footer-content">

@@ -216,3 +216,26 @@ textarea {
     }
 }
 
+/* CTA */
+
+.ctaButton {
+    background-color: var(--Acento, #19A1C4); /* Color celeste */
+    color: #FFF; /* Color del texto blanco */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none; /* Eliminar subrayado */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ctaButton:hover {
+    background-color: #17A0C4; /* Cambia ligeramente el color al pasar el cursor */
+}
+
+

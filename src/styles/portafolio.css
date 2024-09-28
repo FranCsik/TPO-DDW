@@ -1,0 +1,105 @@
+.portafolio {
+    padding: 50px;
+    text-align: center;
+}
+
+.portafolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-portafolio {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.portafolio-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.portafolio-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+}
+
+.portafolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.portafolio-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    object-fit: cover; 
+}
+
+.portafolio-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.portafolio-item a {
+    text-decoration: none;
+    color: #1A74E2;
+    font-weight: bold;
+}
+
+.tecnologias-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px 0;
+}
+
+.tecnologias img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .portafolio-items {
+        flex-direction: column;
+    }
+
+    .portafolio-item {
+        width: 100%;
+    }
+
+    .tecnologias {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tecnologias img {
+        max-width: 45%;
+        height: auto;
+    }
+}

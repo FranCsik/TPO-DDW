@@ -187,7 +187,8 @@ div.member-desc .portfolio-btn.disabled {
 }
 
 div.member-desc .portfolio-btn.figma {
-    background-color: #FF2D16;
+    color: #ffffff;
+    background-color: #19A1C4;
 }
 
 /* Ajustes para dispositivos móviles */

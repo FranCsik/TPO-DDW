@@ -1,31 +1,51 @@
-/* Contacto */
-.contact-container, .office-info {
+/* Sección de contacto */
+.contactSection {
+    padding-top: 100px; /* Añade espacio entre el header y la sección */
+    margin-top: 0;
+}
+
+.contactContainer {
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #000; /* Color negro para "Contacto" */
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px; /* Reduce el espacio debajo de "Contacto" */
+}
+
+/* Texto separado con colores */
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
-h1, h2 {
-    color: #00509C;
-    font-size: 34px;
-    font-weight: 700;
+.greyText {
+    color: rgba(0, 0, 0, 0.5); /* Color gris para "¿Tienes una idea?" */
 }
 
-h1 {
-    font-size: 49px;
+.blueText {
+    color: #00509C; /* Color azul para "Háblalo con nosotros" */
 }
 
-.subtitle {
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.50);
-    font-weight: 500;
+/* Estilos de los inputs */
+.inputGroup {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-.input-group label {
+.inputGroup label {
     display: block;
     text-align: left;
     font-size: 24px;
@@ -47,11 +67,33 @@ textarea {
     height: 100px;
 }
 
-.checkbox input {
-    margin-right: 10px;
+/* Estilos para el checkbox y el texto */
+.checkbox {
+    display: flex;
+    align-items: flex-start; /* Alinea el checkbox con el texto */
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.60); /* Color gris oscuro */
+    line-height: 120%;
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
 }
 
-.button {
+/* Estilo para las palabras destacadas en celeste */
+.highlightedText {
+    color: var(--Acento, #19A1C4); /* Color celeste */
+}
+
+.checkbox input {
+    margin-top: 4px; /* Ajusta la posición del checkbox */
+    width: 18px;
+    height: 18px;
+}
+
+/* Botón de envío */
+.submitButton {
     background: #19A1C4;
     color: #FFF;
     padding: 19px 80px;
@@ -64,29 +106,113 @@ textarea {
     align-items: center;
     height: 44px;
     cursor: pointer;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
 }
 
-.map {
-    width: 648px;
-    height: 400px;
-}
 
-.office-info p {
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 5px 0;
-}
 
+/* Ajustes responsivos */
 @media (max-width: 768px) {
-    .map {
+    .contactContainer {
         width: 100%;
-        height: 200px;
+        padding: 10px;
+    }
+
+    .submitButton {
+        padding: 15px 60px;
+        max-width: 100%;
     }
 }
 
 
-.map iframe {
-    width: 100%; /* Para que sea responsive */
-    height: auto;
+
+/* Seccion 2 */
+
+
+.officeSection {
+    margin-top: 50px; /* Espacio entre el formulario y la sección de la oficina */
+    margin-bottom: 100px;
 }
+
+.officeInfo {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo del título "Nuestra oficina" */
+.officeInfo h1 {
+    color: #00509C;
+    font-size: 49px;
+    font-weight: 700;
+}
+
+/* Contenedor que agrupa el mapa y el texto */
+.contentWrapper {
+    display: flex;
+    flex-direction: row-reverse; /* Coloca el texto a la derecha y el mapa a la izquierda */
+    justify-content: center; /* Centra el contenido */
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px; /* Espacio entre el mapa y el texto */
+    max-width: 1100px; /* Limita el ancho total del contenido */
+    margin-left: auto;
+    margin-right: auto; /* Centra todo el contenido horizontalmente */
+}
+
+/* Contenedor del texto */
+.officeText {
+    width: 450px; /* Ancho específico para el texto */
+    height: 148px; /* Altura específica para el texto */
+    color: #000; /* Color del texto */
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; /* Tamaño de la fuente */
+    font-style: normal;
+    font-weight: 600; /* Negrita */
+    line-height: 105%; /* Altura de línea ajustada */
+    flex-shrink: 0; /* Evita que el texto se encoja */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.officeText p {
+    margin: 10px 0;
+}
+
+.black-text {
+    color: #000; /* Color negro para "Nuestra" */
+}
+
+.blueText {
+    color: #00509C; /* Color azul para "oficina" */
+}
+
+/* Contenedor del mapa */
+.mapContainer {
+    width: 648px; /* Ancho específico para el mapa */
+    height: 400px; /* Altura específica para el mapa */
+    flex-shrink: 0; /* Evita que el mapa se encoja */
+}
+
+.mapContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contentWrapper {
+        flex-direction: column; /* El texto y el mapa se apilan uno debajo del otro */
+    }
+
+    .mapContainer {
+        width: 100%; /* El mapa ocupa el 100% del ancho en pantallas pequeñas */
+    }
+
+    .mapContainer iframe {
+        height: 300px; /* Ajusta la altura del mapa para pantallas pequeñas */
+    }
+}
+

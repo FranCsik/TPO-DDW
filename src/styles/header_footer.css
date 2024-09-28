@@ -168,3 +168,21 @@
         margin: auto;
       }
     }
+
+    .navButton {
+      display: inline-block;
+      background-color: var(--Acento, #19A1C4); /* Color de acento celeste */
+      color: #FFF; /* Texto en blanco */
+      border-radius: 8px; /* Bordes redondeados */
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px; /* Ajusta el tamaño del botón */
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+  }
+  
+  .navButton:hover {
+      background-color: #17A0C4; /* Color de acento más oscuro al hacer hover */
+  }
+  

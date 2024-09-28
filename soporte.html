@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header_footer.css">
+    <link rel="stylesheet" href="src/styles/soporte.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
 <body>
     <header>
         <nav>
+            <img src="src/icons/logo-iconn.png" alt="">
             <p> 3N Consulting</p>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
@@ -39,14 +41,64 @@
             </div>
         </nav>
     </header>
-    <footer>
-      <p>Grupo 3</p>
-      <p>Todos los derechos reservados</p>
-      <div class="social-media">
-        <img src="src/img/instagram-logo.png" alt="">
-        <img src="src/img/facebook-logo.png" alt="">
-        <img src="src/img/linkedin-logo.png" alt="">
+    <section class="soporte_section">
+      <header class="soporte_header"> 
+        <h1 class="soporte_title"> Soporte </h1>
+        <p class="subtitle_header"> Ofrecemos una atención personalizada y ágil para garantizar el óptimo funcionamiento de tus sistemas. Nuestro compromiso es brindarte soluciones rápidas y confiables que te permitan centrarte en lo que realmente importa: tu crecimiento. </p>
+      </header>
+      <div class="soporte_container">
+        <h2 class="soporte_h2"> Mantenimiento de Software </h2>
+        <div class="options_content">
+          <div class="option_container">
+            <img src="src/img/soporte1.png" class="img_bigcard">
+            <p class="name_soporte"> Mesa de Ayuda </p>
+          </div>
+          <div class="option_container">
+            <img src="src/img/soporte2.png" class="img_bigcard">
+            <p class="name_soporte"> Soporte remoto </p>
+          </div>
+          <div class="option_container">
+            <img src="src/img/soporte3.png" class="img_bigcard">
+            <p class="name_soporte"> Monitoreo proactivo </p>
+          </div>
+        </div>
       </div>
+      <div class="soportedesc_container">
+        <div class="soporte_desc">
+          <img class="img_soporte" src="src/img/soporte1.png">
+          <div class="desctext_content">
+            <h3 class="desc_title"> Mesa de Ayuda </h3>
+            <p class="desc_text"> Proporcionamos asistencia técnica directa en tiempo real. A través de un equipo especializado, atendemos las incidencias y consultas de los clientes mediante diversos canales, como chat, teléfono o correo electrónico. </p>
+          </div>
+        </div>
+        <div class="soporte_desc">
+          <img class="img_soporte" src="src/img/soporte2.png" alt="">
+            <div class="desctext_content">
+              <h3 class="desc_title"> Soporte Remoto </h3>
+              <p class="desc_text"> El soporte remoto permite a nuestros técnicos conectarse de forma segura a los sistemas del cliente desde ubicaciones externas, lo que nos permite identificar y solucionar problemas rápidamente sin necesidad de una visita física. </p>
+            </div>
+          </div>
+        <div class="soporte_desc">
+              <img class="img_soporte" src="src/img/soporte3.png">
+              <div class="desctext_content">
+                <h3 class="desc_title"> Monitoreo proactivo </h3>
+                <p class="desc_text"> Supervisamos continuamente los sistemas y redes del cliente para detectar posibles problemas antes de que se conviertan en fallos críticos. Este servicio incluye la generación de alertas tempranas y la implementación de medidas preventivas, asegurando que los sistemas funcionen de manera óptima y reduciendo el riesgo de interrupciones no planificadas.</p>
+              </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p>Materia: Diseño y desarrollo web</p>
+          <p>Curso: 492766</p>
+          <p>Grupo: 3</p>
+        </div>
+        <div>
+          <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+        </div>
+      </div>
+      <img src="src/img/LogoUADE.png" alt="uade-logo">
   </footer>
 </body>
 </html>

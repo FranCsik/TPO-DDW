@@ -44,51 +44,62 @@
         </nav>
     </header>
 
-<section>
-  <div class="contact-container">
+<section class="contactSection">
+  <div class="contactContainer">
       <h2>Contacto</h2>
-      <p class="subtitle">¿Tienes una idea? Háblalo con nosotros</p>
-      <form class="contact-form">
-          <div class="input-group">
+      <p class="subtitle">
+        <span class="greyText">¿Tienes una idea?</span> 
+        <span class="blueText">Háblalo con nosotros</span>
+      </p>
+      <form class="contactForm">
+          <div class="inputGroup">
               <label for="name">Nombre y Apellido</label>
               <input type="text" placeholder="Julian Alvarez" id="name" name="name">
           </div>
-          <div class="input-group">
+          <div class="inputGroup">
               <label for="email">Correo electrónico</label>
               <input type="email" placeholder="julianalvarez@gmail.com" id="email" name="email">
           </div>
-          <div class="input-group">
+          <div class="inputGroup">
               <label for="phone">Teléfono</label>
-              <input type="tel" placeholder="(554) 1233 4565" id="phone" name="phone">
+              <input type="tel" placeholder="(5411) 0912 2018" id="phone" name="phone">
           </div>
-          <div class="input-group">
+          <div class="inputGroup">
               <label for="message">Consulta</label>
               <textarea placeholder="Escribe tu mensaje" id="message" name="message"></textarea>
           </div>
           <div class="checkbox">
               <input type="checkbox" id="terms" name="terms">
-              <label for="terms">Acepto los Términos y condiciones de Grupo 03 y estoy de acuerdo con su Política de Privacidad.</label>
+              <label for="terms">
+                Acepto los 
+                <span class="highlightedText">Términos y condiciones</span> de Grupo 03 y estoy de acuerdo con su 
+                <span class="highlightedText">Política de Privacidad</span>.
+            </label>
           </div>
-          <button type="submit">ENVIAR MENSAJE</button>
+          <button type="submit" class="submitButton">ENVIAR MENSAJE</button>
       </form>
   </div>
-  <div class="office-info">
-      <h1>Nuestra oficina</h1>
-      <p>Dirección: Lima 757, Ciudad Autónoma de Buenos Aires</p>
-      <p>Horarios de atención: Lunes a Viernes, 9 a 18 horas.</p>
-      <div class="map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3264565080765!2d-58.39892998436718!3d-34.61765266596471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1bc5d6b7b%3A0xe2c9f7f70e5d14fd!2sUADE!5e0!3m2!1ses!2sar!4v1636907006393!5m2!1ses!2sar"
-            width="648"
-            height="400"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+</section>
+
+<section class="officeSection">
+  <div class="officeInfo"> 
+    <h1><span class="black-text">Nuestra</span> <span class="blueText">oficina</span></h1>
+    <div class="contentWrapper">
+        <div class="officeText">
+            <p>N3 Consulting</p>
+            <p>Dirección: Lima 757, Ciudad Autónoma de Buenos Aires</p>
+            <p>Horarios de atención: Lunes a Viernes, 9 a 18 horas.</p>
+        </div>
+        <div class="mapContainer">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3264565080765!2d-58.39892998436718!3d-34.61765266596471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1bc5d6b7b%3A0xe2c9f7f70e5d14fd!2sUADE!5e0!3m2!1ses!2sar!4v1636907006393!5m2!1ses!2sar"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
   </div>
-
 </section>
 
 

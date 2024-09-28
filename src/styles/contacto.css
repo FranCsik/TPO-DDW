@@ -1,66 +1,3 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Header styles */
-header {
-    width: 100%;
-    background-color: #FFF;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1000;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Alinear los elementos al centro */
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    color: #f4b400;
-}
-
-/* Footer styles */
-footer {
-    width: 100%;
-    background-color: #FFF;
-    padding: 20px 10px;
-    text-align: center;
-    position: relative; /* Quitar bottom: 0, porque afecta al layout */
-    z-index: 100;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    color: #333;
-}
-
-/* Flex settings for body */
-body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
 main {
     flex-grow: 1; /* Permite que el contenido principal se expanda */
     display: flex;
@@ -157,7 +94,8 @@ textarea {
     }
 }
 
-/* Reset flexbox settings for header and footer */
-header, footer {
-    flex-shrink: 0; /* Asegura que no se reduzcan en flexbox */
+
+.map iframe {
+    width: 100%; /* Para que sea responsive */
+    height: auto;
 }
